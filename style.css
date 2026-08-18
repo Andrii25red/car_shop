@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #90C290;
+    font-family: "JetBrains Mono", monospace;
+    color: #172417;
+}
+
+
+header {
+    background-color: #a8cf97;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 80px;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: #172417;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav-info {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-info a {
+    color: #172417;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-info a:hover {
+    color: #5f00f9;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.register {
+  width: 150px;
+  height: 45px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: black;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.register:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+  color: #3d3b3b;
+  font-size: 17px;
+}
+
+.phone {
+  color:  #3d3b3b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.CAR {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.car {
+    background-color: #eaf5e6;
+    border-radius: 25px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.car:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.car img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.description {
+    padding: 18px 20px;
+    background-color: #eaf5e6;
+}
+
+.description p {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.description .brand {
+    color: #5f00f9;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.modal {
+  display: none;
+
+  position: fixed;
+  z-index: 1000;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+
+  width: 800px;
+  max-width: 100%;
+
+  background-color: #eaf5e6;
+
+  border-radius: 25px;
+  overflow: hidden;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  animation: modalOpen 0.3s ease;
+}
+
+.modal-content > img {
+  width: 100%;
+  height: 350px;
+
+  object-fit: cover;
+  display: block;
+}
+
+.modal-info {
+  padding: 25px 30px 30px;
+}
+
+.modal-brand {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.modal-info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.modal-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.order-btn {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: black;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #333;
+}
+
+.close-modal {
+  position: absolute;
+
+  top: 15px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+
+  font-size: 28px;
+  line-height: 40px;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.close-modal:hover {
+  background-color: black;
+}
+
+@keyframes modalOpen {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #a8cf97;
+    margin-top: 30px;
+}
+
