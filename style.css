@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #90C290;
+    font-family: "JetBrains Mono", monospace;
+    color: #172417;
+}
+
+
+header {
+    background-color: #a8cf97;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 80px;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: #172417;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav-info {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-info a {
+    color: #172417;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-info a:hover {
+    color: #5f00f9;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.register {
+  width: 150px;
+  height: 45px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: black;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.register:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+  color: #3d3b3b;
+  font-size: 17px;
+}
+
+.phone {
+  color:  #3d3b3b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.CAR {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.car {
+    background-color: #eaf5e6;
+    border-radius: 25px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+    position: relative;
+}
+
+.car:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.car img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.description {
+    padding: 18px 20px;
+    background-color: #eaf5e6;
+}
+
+.description p {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.description .brand {
+    color: #5f00f9;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.modal {
+  display: none;
+
+  position: fixed;
+  z-index: 1000;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+
+  width: 800px;
+  max-width: 100%;
+
+  background-color: #eaf5e6;
+
+  border-radius: 25px;
+  overflow: hidden;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  animation: modalOpen 0.3s ease;
+}
+
+.modal-content > img {
+  width: 100%;
+  height: 350px;
+
+  object-fit: cover;
+  display: block;
+}
+
+.modal-info {
+  padding: 25px 30px 30px;
+}
+
+.modal-brand {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.modal-info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.modal-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.order-btn {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: black;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #333;
+}
+
+.close-modal {
+  position: absolute;
+
+  top: 15px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+
+  font-size: 28px;
+  line-height: 40px;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.close-modal:hover {
+  background-color: black;
+}
+
+@keyframes modalOpen {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #a8cf97;
+    margin-top: 30px;
+}
+.likes{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 70;
+  background-color: transparent;
+}
+.likes.active{
+  color: red;
+}
+/* From Uiverse.io by mi-series */ 
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #FCEDDA;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 15px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #000;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #808080;
+  margin-top: 5px;
+  border: 1px solid #EE4E34;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #FCEDDA;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 10px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: #EE4E34;
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #000;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #808080;
+  font-size: 1rem;
+  background: #FCEDDA;
+}
+
+.form button {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #EE4E34;
+}
+
+.form button:hover {
+  background: #EE3E34;
+}
+.register-modal{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.register-modal.active{
+  display: flex;
+}
+.registration-container {
+    max-width: 700px;
+    width: 90%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+}
+
+.registration-container header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-box label,
+.gender-box > label {
+    font-weight: 500;
+}
+
+.input-box input,
+.select-box select {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-box input:focus,
+.select-box select:focus {
+    border-color: #333;
+}
+
+.column {
+    display: flex;
+    gap: 15px;
+}
+
+.column .input-box {
+    width: 50%;
+}
+
+.gender-option {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.gender input {
+    accent-color: #222;
+}
+
+.address .column {
+    margin-top: 10px;
+}
+
+.select-box {
+    width: 50%;
+}
+
+.registration-form > button {
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-form > button:hover {
+    background: #444;
+}
+.close-register {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    color: #555;
+
+    cursor: pointer;
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>AutoMarket</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <img src="/img/7fe26925-22c5-4347-b708-54cb74e20c54.png" width="250px" height="150px">
+
+            <div class="nav-info">
+                <a href="#cars">Автомобілі</a>
+                <a href="#about">Про нас</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+
+            <div class="nav-right">
+
+                <a href="tel:+380440000000" class="phone">
+                    +38 (044) 000 00 00
+                </a>
+
+                <button class="register">
+                    Реєстрація
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+
+
+        <section class="hero">
+
+            <h1>Автомобілі на продаж</h1>
+
+            <p>
+                Оберіть авто, щоб побачити опис та ціну.
+            </p>
+
+        </section>
+
+
+
+        <div class="CAR" id="cars">
+
+
+
+            <div class="car" data-brand="PORSCHE" data-model="911 Targa 4 GTS" data-price="185 000 €"
+                data-description="Спортивний автомобіль Porsche з потужним двигуном, преміальним салоном та відмінною динамікою.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-1-BH9aXh9j.jpg" alt="Porsche 911 Targa 4 GTS">
+
+                <div class="description">
+
+                    <p class="brand">
+                        PORSCHE
+                    </p>
+
+                    <p>
+                        911 Targa 4 GTS
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="FERRARI" data-model="488 GTB" data-price="240 000 €"
+                data-description="Потужний італійський суперкар з неймовірною динамікою, спортивним дизайном та легендарним характером Ferrari.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-2.jpg" alt="Ferrari 488 GTB">
+
+                <div class="description">
+
+                    <p class="brand">
+                        FERRARI
+                    </p>
+
+                    <p>
+                        488 GTB
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="MERCEDES-AMG" data-model="GT Black Series" data-price="325 000 €"
+                data-description="Екстремальний спортивний автомобіль Mercedes-AMG з потужним двигуном, агресивним дизайном та високими характеристиками.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-3.jpg" alt="Mercedes AMG GT Black Series">
+
+                <div class="description">
+
+                    <p class="brand">
+                        MERCEDES-AMG
+                    </p>
+
+                    <p>
+                        GT Black Series
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="NISSAN" data-model="GT-R Nismo" data-price="210 000 €"
+                data-description="Легендарний японський спорткар з повним приводом, високою потужністю та чудовою керованістю.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-4.jpg" alt="Nissan GT-R Nismo">
+
+                <div class="description">
+
+                    <p class="brand">
+                        NISSAN
+                    </p>
+
+                    <p>
+                        GT-R Nismo
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="BMW" data-model="M5 Competition" data-price="145 000 €"
+                data-description="Потужний спортивний седан BMW з преміальним салоном, високою динамікою та комфортом для щоденного використання.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-5.jpg" alt="BMW M5 Competition">
+
+                <div class="description">
+
+                    <p class="brand">
+                        BMW
+                    </p>
+
+                    <p>
+                        M5 Competition
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="LAMBORGHINI" data-model="Huracán STO" data-price="350 000 €"
+                data-description="Ексклюзивний суперкар Lamborghini, створений для максимальної швидкості, точності керування та яскравих емоцій.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-6.jpg" alt="Lamborghini Huracán STO">
+
+                <div class="description">
+
+                    <p class="brand">
+                        LAMBORGHINI
+                    </p>
+
+                    <p>
+                        Huracán STO
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="AUDI" data-model="R8 V10 Performance" data-price="190 000 €"
+                data-description="Спортивний Audi з атмосферним V10 двигуном, чудовою керованістю та характерним дизайном суперкара.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-7.jpg" alt="Audi R8 V10 Performance">
+
+                <div class="description">
+
+                    <p class="brand">
+                        AUDI
+                    </p>
+
+                    <p>
+                        R8 V10 Performance
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="car" data-brand="MCLAREN" data-model="720S" data-price="290 000 €"
+                data-description="Легкий та надзвичайно швидкий суперкар McLaren з потужним двигуном і передовою аеродинамікою.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-8.jpg" alt="McLaren 720S">
+
+                <div class="description">
+
+                    <p class="brand">
+                        MCLAREN
+                    </p>
+
+                    <p>
+                        720S
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="CHEVROLET" data-model="Corvette Z06" data-price="125 000 €"
+                data-description="Американський спортивний автомобіль з потужним двигуном, агресивним дизайном та відмінною динамікою.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-9.jpg" alt="Chevrolet Corvette Z06">
+
+                <div class="description">
+
+                    <p class="brand">
+                        CHEVROLET
+                    </p>
+
+                    <p>
+                        Corvette Z06
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="ASTON MARTIN" data-model="Vantage" data-price="165 000 €"
+                data-description="Елегантний британський спортивний автомобіль з преміальним салоном, потужним двигуном та чудовою керованістю.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-10.jpg" alt="Aston Martin Vantage">
+
+                <div class="description">
+
+                    <p class="brand">
+                        ASTON MARTIN
+                    </p>
+
+                    <p>
+                        Vantage
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="LEXUS" data-model="LC 500" data-price="110 000 €"
+                data-description="Розкішне купе Lexus з атмосферним V8 двигуном, комфортним салоном та стильним сучасним дизайном.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-11.jpg" alt="Lexus LC 500">
+
+                <div class="description">
+
+                    <p class="brand">
+                        LEXUS
+                    </p>
+
+                    <p>
+                        LC 500
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car" data-brand="JAGUAR" data-model="F-Type R" data-price="120 000 €"
+                data-description="Стильний британський спорткар з потужним двигуном, розкішним салоном та спортивним характером.">
+                <button class="likes"><i class="fa-regular fa-heart"></i></button>
+
+                <img src="img/car-12.jpg" alt="Jaguar F-Type R">
+
+                <div class="description">
+
+                    <p class="brand">
+                        JAGUAR
+                    </p>
+
+                    <p>
+                        F-Type R
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <div class="modal" id="carModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal">
+                &times;
+            </button>
+
+
+            <img id="modalImage" src="" alt="">
+
+
+            <div class="modal-info">
+
+                <p class="modal-brand" id="modalBrand">
+                </p>
+
+                <h2 id="modalTitle">
+                </h2>
+
+                <p class="modal-description" id="modalDescription">
+                </p>
+
+                <p class="modal-price" id="modalPrice">
+                </p>
+
+                <button class="order-btn">
+                    Замовити автомобіль
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="register-modal" id="registerModal">
+
+    <section class="registration-container">
+
+        <button class="close-register">&times;</button>
+
+        <header>Реєстрація</header>
+
+        <form class="registration-form">
+
+            <div class="input-box">
+                <label>Повне ім'я</label>
+                <input required placeholder="Введіть повне ім'я" type="text">
+            </div>
+
+            <div class="column">
+
+                <div class="input-box">
+                    <label>Номер телефону</label>
+                    <input required placeholder="Введіть номер телефону" type="tel">
+                </div>
+
+                <div class="input-box">
+                    <label>Дата народження</label>
+                    <input required type="date">
+                </div>
+
+            </div>
+
+            <div class="gender-box">
+
+                <label>Стать</label>
+
+                <div class="gender-option">
+
+                    <div class="gender">
+                        <input checked name="gender" id="check-male" type="radio">
+                        <label for="check-male">Чоловіча</label>
+                    </div>
+
+                    <div class="gender">
+                        <input name="gender" id="check-female" type="radio">
+                        <label for="check-female">Жіноча</label>
+                    </div>
+
+                    <div class="gender">
+                        <input name="gender" id="check-other" type="radio">
+                        <label for="check-other">Не вказувати</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="input-box address">
+
+                <label>Адреса</label>
+
+                <input required placeholder="Введіть адресу" type="text">
+
+                <div class="column">
+
+                    <div class="select-box">
+                        <select required>
+                            <option hidden>Країна</option>
+                            <option>Україна</option>
+                            <option>Польща</option>
+                            <option>Німеччина</option>
+                            <option>США</option>
+                        </select>
+                    </div>
+
+                    <input required placeholder="Введіть місто" type="text">
+
+                </div>
+
+            </div>
+
+            <button type="submit">Зареєструватися</button>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+    <footer>
+
+        <p>
+            © 2026 AutoMarket
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
