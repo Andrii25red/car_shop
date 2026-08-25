@@ -1,3 +1,4 @@
+
 const cars = document.querySelectorAll(".car");
 
 const modal = document.querySelector("#carModal");
