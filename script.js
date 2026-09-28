@@ -14,6 +14,7 @@ const closeModal = document.querySelector(".close-modal");
 cars.forEach(car => {
 
     car.addEventListener("click", () => {
+        gtag('event', 'car-click-button')
 
         const image = car.querySelector("img");
 
